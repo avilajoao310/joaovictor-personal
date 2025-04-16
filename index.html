@@ -1,73 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>João Victor - Personal Trainer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Victor - Personal Trainer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <img src="foto-joao.jpg" alt="João Victor" class="hero-img" />
-    <div class="hero-text">
-      <h1>Quem Sou Eu – E Por Que Isso Importa Pra Você</h1>
-      <p>
-        Meu nome é João Victor e se você chegou até aqui, provavelmente tá cansado de prometer que “segunda começa”, de tentar treinar sem ver resultado, ou de simplesmente não conseguir manter o ritmo.
-      </p>
-      <p>
-        E eu te entendo. Porque já acompanhei muitas pessoas exatamente assim. Sem motivação, sem resultado, se sentindo travados no próprio corpo e na própria cabeça.
-        A diferença? Eles decidiram fazer diferente. E eu fui o cara que guiou essa virada.
-      </p>
-      <p>
-        Aqui, o treino não é genérico, não é copia e cola, não é mais do mesmo.
-        Você vai ter um plano que realmente faz sentido pra tua rotina, com acompanhamento real, direto, no dia a dia. Eu não sumo. Eu cobro. Eu tô junto.
-      </p>
-      <p>
-        Seja no online ou no presencial, meu foco é só um:
-        Fazer você parar de se sabotar e finalmente viver no corpo que você merece.
-      </p>
-      <p>
-        Se você cansou de tentar sozinho e tá pronto pra ter alguém que realmente te leve pro próximo nível — você precisa estar aqui.
-      </p>
-      <p><strong>Não é sobre ter tempo. É sobre ter prioridade. E se o teu progresso for uma delas, a hora é agora.</strong></p>
-    </div>
-  </header>
+    <header>
+        <img src="imagens/joao-victor.jpeg" alt="João Victor">
+        <h1>Quem Sou Eu – E Por Que Isso Importa Pra Você</h1>
+        <p>Meu nome é João Victor e se você chegou até aqui, provavelmente tá cansado de prometer que “segunda começa”...</p>
+    </header>
 
-  <section class="cta">
-    <div class="container">
-      <h2 class="section-title">Vamos Começar?</h2>
-      <p class="cta-text">Clique abaixo e fale comigo direto:</p>
-      <div class="cta-buttons">
-        <a href="https://wa.me/5551993603883" target="_blank" class="btn whatsapp-btn">Falar no WhatsApp</a>
-        <a href="https://www.instagram.com/avilajoao__/" target="_blank" class="btn insta-btn">Ver no Instagram</a>
-      </div>
-    </div>
-  </section>
+    <section class="planos">
+        <h2>Planos Disponíveis</h2>
+        <div class="plano">
+            <h3>Plano Online</h3>
+            <p>Treino com acompanhamento remoto + suporte diário.</p>
+            <strong>R$ 99/mês</strong>
+        </div>
+        <div class="plano">
+            <h3>Plano Presencial</h3>
+            <p>Treinos personalizados com acompanhamento direto na academia.</p>
+            <strong>R$ 199/mês</strong>
+        </div>
+    </section>
 
-  <!-- Botões flutuantes -->
-  <div class="floating-buttons">
-    <a href="https://wa.me/5551993603883" class="float-btn whatsapp" target="_blank" title="Fale no WhatsApp">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-    </a>
-    <a href="https://www.instagram.com/avilajoao__/" class="float-btn instagram" target="_blank" title="Ver no Instagram">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" />
-    </a>
-  </div>
-
-  <!-- Áudio de clique -->
-  <audio id="click-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_9fba527e58.mp3?filename=click-124467.mp3" preload="auto"></audio>
-
-  <script>
-    const sound = document.getElementById('click-sound');
-    const floatBtns = document.querySelectorAll('.float-btn');
-    floatBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        sound.currentTime = 0;
-        sound.play();
-      });
-    });
-  </script>
+    <section class="cta">
+        <a href="https://wa.me/5591993603883" class="btn">Falar no WhatsApp</a>
+        <a href="https://www.instagram.com/avilajoao__/" class="btn insta">Ver no Instagram</a>
+    </section>
 </body>
 </html>
